@@ -1,4 +1,4 @@
-def deployToEnvironment(environment) {
+def deployToEnvironment(String environment) {
     if (environment == 'PROD') {
         println("Deploying to production")
     } else {

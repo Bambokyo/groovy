@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    // Call the deployToEnvironment function with the input string
+                    deployToEnvironment('PROD')
+                }
+            }
+        }
+    }
+}

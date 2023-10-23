@@ -6,7 +6,8 @@ pipeline {
             steps {
                 script {
                     // Call the deployToEnvironment function with the input string
-                    deployToEnvironment('PROD')
+                    data = load 'file.groovy'
+                    data.deployToEnvironment('PROD')
                 }
             }
         }
